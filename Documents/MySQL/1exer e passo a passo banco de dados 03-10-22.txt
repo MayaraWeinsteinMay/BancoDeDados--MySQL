@@ -1,0 +1,32 @@
+    
+          1exercício de banco de dados 03-10-22 
+
+
+create database bd_rh
+
+use db_rh
+
+create table db_rh ( id bigint(5) auto_increment, 
+nome varchar(30) not null, 
+cpf bigint (11) not null, (tinha que ser vachar, pq pode -) 
+salario decimal (10,2) not null, 
+telefone bigint(9), (tinha que ser vachar)
+primary key (id) ); 
+ 
+//(OBS NESSE EU CRIEI TABELA COM DB(DATABASE) MAS ERA PARA SER TB(TABELA)//
+
+
+select * from db_rh //(PARA VISUALIZAR O QUE SE FEZ ATÉ AQUI)//
+
+
+
+insert into db_rh ( nome, cpf, salario,telefone) values ("Joao", 113456781,2000.00,9123456711);
+insert into db_rh ( nome, cpf, salario,telefone) values ("Maria", 123456782,5000.00,9273456722);
+insert into db_rh ( nome, cpf, salario,telefone) values ("Pedro", 133456783,1200.00,933456733);
+ insert into db_rh ( nome, cpf, salario,telefone) values ("tiago", 143456784,800.00,9473456744);
+ insert into db_rh ( nome, cpf, salario,telefone) values ("Juliana", 153456785,9000.00,9573456755);
+
+
+select * from db_rh where salario < 2000.00;  //(para saber o maior salário)//
+
+ select * from db_rh where salario >= 2000.00;   //(para saber o menor ou igual)//
